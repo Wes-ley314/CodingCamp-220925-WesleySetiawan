@@ -8,11 +8,15 @@ updateTime();
 
 // Handle form submission
 document.getElementById("contactForm").addEventListener("submit", function (e) {
+  const gender = document.querySelector('input[name="gender"]:checked').value;
   e.preventDefault();
   document.getElementById("infoNama").textContent = document.getElementById("nama").value;
   document.getElementById("infoTanggal").textContent = document.getElementById("tanggal").value;
-  document.getElementById("infoGender").textContent = document.getElementById("gender").value;
+  document.getElementById("infoGender").textContent = gender;
   document.getElementById("infoPesan").textContent = document.getElementById("pesan").value;
+
+  // Update greeting text
+  document.getElementById("displayName").textContent = document.getElementById("nama").value;
 });
 
 // For the cards logic functions
