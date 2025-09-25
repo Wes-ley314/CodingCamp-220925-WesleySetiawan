@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">MyLogo</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#message-us">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="container">
+      <h1>Hi Name, Welcome to the website</h1>
+      <p>ini adalah website latihan pertama</p>
+      <img src="https://via.placeholder.com/1366x578" alt="Placeholder Image">
+    </div>
+  </section>
+
+  <!-- Our Headquarter -->
+  <section id="headquarter-section">
+    <div class="container">
+      <h1>Our Headquarter</h2>
+        <div id="headquarter">
+          <div>
+            <div class="circle"><img src="https://via.placeholder.com/150" alt=""></div>
+            <p>Headquarter 1</p>
+          </div>
+          <div>
+            <div class="circle"><img src="https://via.placeholder.com/150" alt=""></div>
+            <p>Headquarter 2</p>
+          </div>
+          <div>
+            <div class="circle"><img src="https://via.placeholder.com/150" alt=""></div>
+            <p>Headquarter 3</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Profile Page -->
+  <section id="profile">
+    <div class="container">
+      <h1>Our Profile</h1>
+      <div class="cards">
+        <!-- Left static card -->
+        <div class="card left-card">
+          <img src="https://via.placeholder.com/100?text=▲" alt="Icon" />
+        </div>
+
+        <!-- Right swipable card -->
+        <div class="card right-card">
+          <h2 id="card-title">About</h2>
+          <p id="card-desc">This is the about description.</p>
+
+          <!-- Dots -->
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="message-us">
+    <div class="container">
+      <h1>Message Us</h1>
+      <div class="form-container">
+        <div class="form-box">
+          <form id="contactForm">
+            <label>Nama:</label>
+            <input type="text" id="nama" required>
+
+            <label>Tanggal Lahir:</label>
+            <input type="date" id="tanggal" required>
+
+            <label>Jenis Kelamin:</label>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="gender" value="Laki-laki" required>
+                Laki-laki
+              </label>
+              <label>
+                <input type="radio" name="gender" value="Perempuan" required>
+                Perempuan
+              </label>
+            </div>
+
+            <label>Pesan:</label>
+            <textarea id="pesan" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="info-box">
+          <h3>Information</h3>
+          <p><strong>Current Time:</strong> <span id="currentTime"></span></p>
+          <p><strong>Nama:</strong> <span id="infoNama"></span></p>
+          <p><strong>Tanggal Lahir:</strong> <span id="infoTanggal"></span></p>
+          <p><strong>Jenis Kelamin:</strong> <span id="infoGender"></span></p>
+          <p><strong>Pesan:</strong> <span id="infoPesan"></span></p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Website. Created By Wesley.S</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
