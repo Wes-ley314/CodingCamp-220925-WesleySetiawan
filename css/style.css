@@ -11,19 +11,23 @@ body {
   padding: 0 20px;
 }
 
-/* Header */
+/* Navbar styling */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 0 30px;
+  height: 70px; /* fixed navbar height */
   background: #333;
   color: #fff;
 }
 
-header .logo {
-  font-size: 20px;
-  font-weight: bold;
+/* Logo image fits navbar height */
+.logo img {
+  height: 100%;
+  max-height: 70px; /* matches navbar height */
+  width: auto;
+  object-fit: contain; /* keeps proportions */
 }
 
 nav ul {
@@ -187,7 +191,7 @@ form button:hover {
 }
 
 .left-card img {
-  width: 80px;
+  width: auto;
   margin: auto;
 }
 

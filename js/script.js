@@ -21,7 +21,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
 // For the cards logic functions
 const data = [
-  { title: "About", desc: "This is the about description." },
+  { title: "About", desc: "Passionate developer specializing in creating efficient, user-friendly, and modern solutions. I turn ideas into functional designs and impactful digital experiences." },
   { title: "Mission", desc: "Our mission is to create amazing designs." },
   { title: "Vision", desc: "We envision a better future with design." }
 ];
